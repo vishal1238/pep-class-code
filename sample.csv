@@ -1,0 +1,6 @@
+| ID  | Name         | Age | Course     | Email                                         | City    |
+| --- | ------------ | --- | ---------- | --------------------------------------------- | ------- |
+| 1   | Aarav Sharma | 21  | B.Tech CSE | [aarav@example.com](mailto:aarav@example.com) | Delhi   |
+| 2   | Priya Singh  | 22  | B.Tech IT  | [priya@example.com](mailto:priya@example.com) | Mumbai  |
+| 3   | Rahul Verma  | 20  | BCA        | [rahul@example.com](mailto:rahul@example.com) | Lucknow |
+| ... | ...          | ... | ...        | ...                                           | ...     |
