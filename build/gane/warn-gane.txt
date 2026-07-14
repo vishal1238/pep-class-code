@@ -1,0 +1,26 @@
+
+This file lists modules PyInstaller was not able to find. This does not
+necessarily mean these modules are required for running your program. Both
+Python's standard library and 3rd-party Python packages often conditionally
+import optional modules, some of which may be available only on certain
+platforms.
+
+Types of import:
+* top-level: imported at the top-level - look at these first
+* conditional: imported within an if-statement
+* delayed: imported within a function
+* optional: imported within a try-except-statement
+
+IMPORTANT: Do NOT post this list to the issue-tracker. Use it as a basis for
+            tracking down the missing module yourself. Thanks!
+
+missing module named 'collections.abc' - imported by typing (top-level), _colorize (top-level), traceback (top-level), logging (top-level), selectors (top-level), http.client (top-level), importlib.resources.readers (top-level), inspect (top-level), tracemalloc (top-level)
+missing module named _scproxy - imported by urllib.request (conditional)
+missing module named posix - imported by posixpath (optional), shutil (conditional), importlib._bootstrap_external (conditional), pathlib._os (optional)
+missing module named resource - imported by posix (top-level)
+missing module named fcntl - imported by pathlib._os (optional)
+missing module named grp - imported by shutil (delayed, optional), tarfile (optional), pathlib (optional)
+missing module named pwd - imported by posixpath (delayed, conditional, optional), shutil (delayed, optional), tarfile (optional), pathlib (optional), netrc (delayed, optional)
+missing module named _frozen_importlib_external - imported by importlib._bootstrap (delayed), importlib (optional), importlib.abc (optional)
+excluded module named _frozen_importlib - imported by importlib (optional), importlib.abc (optional)
+invalid module named os - imported by linecache (delayed, optional), argparse (top-level), gettext (top-level), shutil (top-level), fnmatch (top-level), posixpath (top-level), genericpath (top-level), bz2 (top-level), lzma (top-level), compression.zstd._zstdfile (top-level), tarfile (top-level), _strptime (top-level), _colorize (top-level), gzip (top-level), importlib.resources._common (top-level), ntpath (top-level), pathlib (top-level), contextlib (top-level), glob (top-level), pathlib._os (top-level), getopt (top-level), email.utils (top-level), random (top-level), logging (top-level), threading (top-level), socket (top-level), ssl (top-level), urllib.request (top-level), tempfile (top-level), http.cookiejar (top-level), mimetypes (delayed), netrc (top-level), importlib.resources.abc (top-level), importlib.metadata (top-level), importlib.metadata._meta (top-level), zipfile (top-level), py_compile (top-level), ntpath (top-level), zipfile._path.glob (top-level), inspect (top-level), functools (delayed, conditional), locale (delayed), tkinter (delayed, conditional), C:\Users\weber\Desktop\pep class code\gane.py (top-level), C:\Users\weber\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\PyInstaller\hooks\rthooks\pyi_rth_inspect.py (delayed), C:\Users\weber\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\PyInstaller\hooks\rthooks\pyi_rth__tkinter.py (delayed)
