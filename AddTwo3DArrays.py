@@ -1,4 +1,5 @@
 # P-1: Add two 3D arrays
+# Write a Python function that takes two three-dimensional numeric data sets and adds them componentwise. 
 
 A = [
     [[1, 2], [3, 4]],
