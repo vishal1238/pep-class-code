@@ -45,4 +45,3 @@ for word in ['apple','banana','appricot','cherry','avocado','blueberry']:
 
 print("suggestions for ap:")
 print(get_suggestions(engine,'ap'))
-814009
