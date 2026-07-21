@@ -1,15 +1,9 @@
--- Create Users Table
-CREATE TABLE Users (
-    UserID INT PRIMARY KEY,
-    UserName VARCHAR(50),
-    City VARCHAR(50),
-    AccountType VARCHAR(20)   -- 'Regular' or 'Premium'
-);
+-- Question 1 ● Problem Statement: Write a query to display the UserName of the customer, the RestaurantName they ordered from, and the BillAmount for all orders. ● Tables to Use: Users, Restaurants, Orders 
 
--- Insert Sample Data
-INSERT INTO Users VALUES
-(1, 'Aman Verma', 'Delhi', 'Premium'),
-(2, 'Riya Sen', 'Mumbai', 'Regular');
-
--- Display Data
-SELECT * FROM Users;
+SELECT
+    U.UserName,
+    R.RestaurantName,
+    O.BillAmount
+FROM Orders O
+INNER JOIN Users U ON O.UserID = U.UserID
+INNER JOIN Restaurants R ON O.RestaurantID = R.RestaurantID;

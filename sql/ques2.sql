@@ -1,15 +1,4 @@
--- Create Users Table
-CREATE TABLE Users (
-    UserID INT PRIMARY KEY,
-    UserName VARCHAR(50),
-    City VARCHAR(50),
-    AccountType VARCHAR(20)   -- 'Regular' or 'Premium'
-);
+-- Question 2 ● Problem Statement: Fetch a unique list of all restaurant names that have successfully had orders cooked and assigned to a delivery tracking record (even if the delivery was later cancelled). ● Tables to Use: Restaurants, Orders 
 
--- Insert Sample Data
-INSERT INTO Users VALUES
-(1, 'Aman Verma', 'Delhi', 'Premium'),
-(2, 'Riya Sen', 'Mumbai', 'Regular');
-
--- Display Data
-SELECT * FROM Users;
+SELECT DISTINCT R.RestaurantName 
+FROM Restaurants R INNER JOIN Orders O ON R.RestaurantID = O.RestaurantID; 
